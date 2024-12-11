@@ -6,6 +6,9 @@ public class DoorUnlock : MonoBehaviour
     public float unlockDistance = 2f; // Distance required to unlock
     private bool isUnlocked = false;
 
+    public Collider blockingCollider; // Physical collider to block the player
+    public Collider triggerCollider;  // Trigger collider for interaction
+
     void Update()
     {
         if (lockpick != null && !isUnlocked)
@@ -25,10 +28,17 @@ public class DoorUnlock : MonoBehaviour
     {
         isUnlocked = true;
 
-        // Example: Move the door up to "open" it
         transform.position += new Vector3(0, 3, 0);
 
-        // Optional: Disable the trigger or collider to make the door unresponsive after unlocking
-        GetComponent<BoxCollider>().enabled = false;
+        // Disable the blocking collider to allow passage
+        if (blockingCollider != null)
+        {
+            blockingCollider.enabled = false;
+        }
+
+        if (triggerCollider != null)
+        {
+            triggerCollider.enabled = false;
+        }
     }
 }
