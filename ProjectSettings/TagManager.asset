@@ -3,11 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Target
-  - Bullet
-  - XRController
-  - Inventory
+  tags: []
   layers:
   - Default
   - TransparentFX
