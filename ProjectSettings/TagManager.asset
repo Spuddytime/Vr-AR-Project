@@ -7,6 +7,7 @@ TagManager:
   - Target
   - Bullet
   - XRController
+  - Inventory
   layers:
   - Default
   - TransparentFX

@@ -1239,6 +1239,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 1086000353}
   rayInteractor: {fileID: 613694755}
+--- !u!4 &1115386983 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2173051903647924846, guid: 0c2c0b0a443a8074294b16e1bd27ae5b, type: 3}
+  m_PrefabInstance: {fileID: 1211411392585477095}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1335201147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,6 +1407,7 @@ GameObject:
   - component: {fileID: 1429819735}
   - component: {fileID: 1429819740}
   - component: {fileID: 1429819739}
+  - component: {fileID: 1429819741}
   m_Layer: 0
   m_Name: Flashlight
   m_TagString: Untagged
@@ -1680,6 +1686,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1429819741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429819734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b8a3c745be27c49bd5fa80acaf2dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1115386983}
+  offset: {x: 0, y: 0, z: 1}
+  followDistance: 2
+  followSpeed: 5
 --- !u!1 &1438585187
 GameObject:
   m_ObjectHideFlags: 0
